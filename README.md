@@ -1,6 +1,7 @@
 # Programming Assignment 1 - Verifying and Matching
 
 **Isaac Wachsman (UFID: 28099694)**
+
 **Aarav Bejjinki (UFID: 40331589)** 
 
 ## Project Structure Overview
