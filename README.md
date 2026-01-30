@@ -55,6 +55,8 @@ If preference lists are coming from a text file for both matcher and verifier, t
 ```
 The first line contains a single positive integer, n. The following 2*n lines each contain a permutation of the integers 1 through n with a single space between each one.
 
+**NOTE:** Input files that do not match this specified format will result in undefined behavior.
+
 
 The matcher output is printed in the terminal in the form:
 ```
