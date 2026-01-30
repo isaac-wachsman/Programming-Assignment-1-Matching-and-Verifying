@@ -71,7 +71,7 @@ vector<int> get_stable_matching(int n, vector<vector<int>> hospital_prefs, vecto
         }
 
         //If applicant prefers hospital to current, unmatch current, assign new, remove h from unmatched
-        else if(pref_hospital(student_prefs[a], h, matching[a-1]))
+        else if(pref_hospital(student_prefs[a-1], h, matching[a-1]))
         {
                 unmatchedHospitals.insert(matching[a-1]);
                 matching[a-1] = h;
