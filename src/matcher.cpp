@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <set>
+#include "matcher.h"
 
 using namespace std;
 
@@ -36,7 +37,7 @@ void print_matching(vector<int>& matching)
 
 vector<int> get_stable_matching(int n, vector<vector<int>> hospital_prefs, vector<vector<int>> student_prefs)
 {
-    //Vector keeps track of current matching - indices are applicants
+    //Vector keeps track of current matching - indices are students
     vector<int> matching(n, -1);
 
     //Vector keeps track of the most preferred applicant that hospital has yet to propose to
@@ -82,22 +83,4 @@ vector<int> get_stable_matching(int n, vector<vector<int>> hospital_prefs, vecto
     
     return matching;
 
-}
-
-
-
-
-
-
-int main()
-{
-    int n = 3;
-
-    vector<vector<int>> hospitalPreferences = {{2,1,3}, {2,1,3}, {2,1,3}};
-    vector<vector<int>> applicantPreferences = {{2,1,3}, {1,2,3}, {1,2,3}};
-
-    vector<int> result = get_stable_matching(n, hospitalPreferences, applicantPreferences);
-    print_matching(result);
-
-    return 0;
 }
