@@ -35,7 +35,7 @@
 
 1. Complete steps 1 and 2 from the previous section if not done already.
 2. Run `g++ -o verify verifier.cpp parser.cpp` to compile the verifier.
-3. Run `./main ../tests/inputN.txt` where N = 1 or 2 to get the preference lists stored in text files. `../tests/inputN.txt` may be replaced with the path (relative to src) to any valid input text file.
+3. Run `./verify ../tests/inputN.txt` where N = 1 or 2 to get the preference lists stored in text files. `../tests/inputN.txt` may be replaced with the path (relative to src) to any valid input text file.
 4. The program will prompt you to enter n positive integers via the command line. The ith (1-index) integer you provide is the hospital number that student i is matched with in your proposed matching.
 
 ## Input / Output
