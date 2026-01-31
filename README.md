@@ -71,11 +71,11 @@ with the line ``i j`` meaning that hospital i is matched with student j. The num
 
 For the verifier, the terminal output is VALID STABLE if the matching is valid and stable. The verifier will print INVALID if the proposed matching is invalid or UNSTABLE if the matching is valid but unstable. An error message will be provided explaining why the matching is invalid or unstable.
 
-
+## Running Time Graphs
 ![Matcher Graph](data/running_time_matching.png)
 
 ![Verifier Graph](data/running_time_verifying.png)
 
 ## Running Time Observations
 
-Based on the graphs of the input size vs execution time for the matcher and the verifier, both the matcher and the verifier appear to run in polynomial time. This is because the data is plotted on a graph where both axes are log-scaled and the relationship appears to be linear. This implies that there is a polynomial relationship between input size and execution size. The matcher runs the standard Gale-Shapley algorithm, so we suspect that the average run time is O(n^2). We suspect that our verifier algorithm has a worst case time complexity of O(n^3) because for each of the n^2 pairs, we need to go through the n-element preference lists and see if each in the pair prefers each other to their current match. However, the average time complexity is probably much less than this because in the case that the proposed matching is not valid or stable, a stable pair can usually be detected very fast. This was not reflected in the graph above however as we only measured the execution time for valid and stable matchings. 
+Based on the graphs of the input size vs execution time for the matcher and the verifier, both the matcher and the verifier appear to run in polynomial time. This is because the data is plotted on a graph where both axes are log-scaled and the relationship appears to be linear. This implies that there is a polynomial relationship between input size and execution size. The matcher runs the standard Gale-Shapley algorithm, so we suspect that the average run time is O($n^2$). We suspect that our verifier algorithm has a worst case time complexity of O($n^3$) because for each of the $n^2$ pairs, we need to go through the n-element preference lists and see if each in the pair prefers each other to their current match. However, the average time complexity is probably much less than this because in the case that the proposed matching is not valid or stable, a stable pair can usually be detected very fast. This was not reflected in the graph above however as we only measured the execution time for valid and stable matchings. 
