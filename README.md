@@ -68,3 +68,8 @@ The matcher output is printed in the terminal in the form:
 with the line ``i j`` meaning that hospital i is matched with student j. The number of lines is equal to the number of hospitals/students used.
 
 For the verifier, the terminal output is VALID STABLE if the matching is valid and stable. The verifier will print INVALID if the proposed matching is invalid or UNSTABLE if the matching is valid but unstable. An error message will be provided explaining why the matching is invalid or unstable.
+
+
+![Matcher Graph](data/running_time_matching.png)
+
+![Verifier Graph](data/running_time_verifying.png)
