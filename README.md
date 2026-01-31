@@ -29,13 +29,13 @@
 
 4. Run `./main` to run the main program with random preference lists. You will be prompted to provide a positive integer n, after which the program will generate random preference lists of length n.
 
-5. Run `./main ../tests/inputN.txt` where N = 1 or 2 to run Gale-Shapley algorithm on preference lists stored in text files. `../tests/inputN.txt` may be replaced with the path (relative to src) to any valid input text file.
+5. Run `./main ../tests/inputN.txt` where N = 1, 2, or 3 to run Gale-Shapley algorithm on preference lists stored in text files. `../tests/inputN.txt` may be replaced with the path (relative to src) to any valid input text file.
 
 ## Compilation and Execution Instruction (Verifier)
 
 1. Complete steps 1 and 2 from the previous section if not done already.
 2. Run `g++ -o verify verifier.cpp parser.cpp` to compile the verifier.
-3. Run `./verify ../tests/inputN.txt` where N = 1 or 2 to get the preference lists stored in text files. `../tests/inputN.txt` may be replaced with the path (relative to src) to any valid input text file.
+3. Run `./verify ../tests/inputN.txt` where N = 1, 2, or 3 to get the preference lists stored in text files. `../tests/inputN.txt` may be replaced with the path (relative to src) to any valid input text file.
 4. The program will prompt you to enter n positive integers via the command line. The ith (1-index) integer you provide is the hospital number that student i is matched with in your proposed matching.
 
 ## Input / Output
