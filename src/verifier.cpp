@@ -1,4 +1,7 @@
 #include "verifier.h"
+#include "parser.h"
+#include <string>
+#include <chrono>
 
 int get_index(int num, vector<int>& vec)
 {
@@ -77,6 +80,37 @@ bool verify(vector<int>& matching, vector<vector<int>>& hospitalPrefs, vector<ve
     }
 
     //Return true if all checks pass
+    cout << "VALID STABLE" << endl;
     return true;
 
+}
+
+
+int main(int argc, char* argv[])
+{
+    vector<vector<vector<int>>> input = parse_preference_lists(argv[1]);
+    int n = input[0].size();
+    
+    vector<int> proposed_matching;
+    string s;
+
+    for(int i = 0; i < n; i++)
+    {
+        cout << "Enter the hospital that student " << (i+1) << " is matched to in your proposed matching." << endl;
+        cin >> s;
+        proposed_matching.push_back(stoi(s));
+    }
+
+
+    //auto start = std::chrono::steady_clock::now();
+
+    verify(proposed_matching, input[0], input[1]);
+
+    //auto end = std::chrono::steady_clock::now();
+    //auto diff = end - start;
+        
+
+
+    //std::cout << std::chrono::duration_cast<std::chrono::microseconds>(diff).count() << " microseconds" << std::endl;
+    
 }
