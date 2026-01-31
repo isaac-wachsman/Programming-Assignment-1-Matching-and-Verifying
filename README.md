@@ -23,7 +23,7 @@
 
 1. Navigate to a folder of your choice on your terminal and run `git clone https://github.com/isaac-wachsman/Programming-Assignment-1-Matching-and-Verifying.git` to clone the repository to the folder.
 
-2. Run `cd  Programming-Assignment-1-Matching-and-Verifying` , then `cd src` to navigate to the src directory.
+2. Run `cd Programming-Assignment-1-Matching-and-Verifying` , then `cd src` to navigate to the src directory.
 
 3. Run `g++ -o main main.cpp matcher.cpp parser.cpp random_input.cpp` to compile the matching program.
 
