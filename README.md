@@ -20,6 +20,7 @@
 
 
 ## Compilation and Execution Instructions (Matcher)
+(Please note that the commands given are for Windows Powershell. Similar commands can be run for other terminals.)
 
 1. Navigate to a folder of your choice on your terminal and run `git clone https://github.com/isaac-wachsman/Programming-Assignment-1-Matching-and-Verifying.git` to clone the repository to the folder.
 
@@ -32,6 +33,7 @@
 5. Run `./main ../tests/inputN.txt` where N = 1, 2, or 3 to run Gale-Shapley algorithm on preference lists stored in text files. `../tests/inputN.txt` may be replaced with the path (relative to src) to any valid input text file.
 
 ## Compilation and Execution Instruction (Verifier)
+(Please note that the commands given are for Windows Powershell. Similar commands can be run for other terminals.)
 
 1. Complete steps 1 and 2 from the previous section if not done already.
 2. Run `g++ -o verify verifier.cpp parser.cpp` to compile the verifier.
